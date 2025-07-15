@@ -173,11 +173,6 @@ const Volunteer = () => {
                 </div>
             </div>
 
-
-                
-
-               
-
                <div className="relative z-10 bg-gradient-to-r from-yellow-400 to-amber-500 py-20  rounded-3xl shadow-2xl">
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center">

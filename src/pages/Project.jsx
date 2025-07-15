@@ -1,4 +1,14 @@
 import React from 'react';
+import kitabi1 from '../assets/kitabiudan1.jpeg';
+import kitabi2 from '../assets/kitabi2.jpeg';
+import kitabi3 from '../assets/kitabi3.jpeg';
+import clean1 from '../assets/clean1.jpeg';
+import clean2 from '../assets/clean2.jpeg';
+
+// Import videos
+import laborVideo from '../assets/labor.mp4';
+import cleanlinessVideo from '../assets/vi.mp4';
+import menstrualVideo from '../assets/mesntrual.mp4';
 
 const Project = () => {
     return (
@@ -52,7 +62,7 @@ const Project = () => {
                                 <div className="relative group">
                                     <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-amber-400 rounded-2xl blur opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
                                     <img 
-                                        src="src/assets/kitabiudan1.jpeg" 
+                                        src={kitabi1}
                                         alt="Kitabi Udan poster" 
                                         className="relative w-80 h-64 object-cover rounded-2xl shadow-xl border-4 border-yellow-300 hover:border-yellow-400 transition-all duration-300 transform hover:scale-105"
                                     />
@@ -69,7 +79,7 @@ const Project = () => {
                             <div className="relative group">
                                 <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-amber-400 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
                                 <img 
-                                    src="src/assets/kitabi2.jpeg" 
+                                    src={kitabi2} 
                                     alt="Kitabi Udan notebook" 
                                     className="relative w-64 h-48 object-cover rounded-2xl shadow-xl border-4 border-yellow-300 hover:border-yellow-400 transition-all duration-300 transform hover:scale-105"
                                 />
@@ -77,7 +87,7 @@ const Project = () => {
                             <div className="relative group">
                                 <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-amber-400 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
                                 <img 
-                                    src="src/assets/kitabi3.jpeg" 
+                                    src={kitabi3} 
                                     alt="Kitabi Udan seniors" 
                                     className="relative w-64 h-48 object-cover rounded-2xl shadow-xl border-4 border-yellow-300 hover:border-yellow-400 transition-all duration-300 transform hover:scale-105"
                                 />
@@ -111,7 +121,7 @@ const Project = () => {
                                 <div className="relative w-full max-w-2xl bg-gradient-to-r from-amber-900 to-orange-900 rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-300">
                                     <div className="aspect-video">
                                         <iframe
-                                            src="src/assets/labour`s_dAY.mp4"
+                                            src={laborVideo}
                                             title="Labour's Day Video"
                                             className="w-full h-full"
                                             frameBorder="0"
@@ -156,7 +166,7 @@ const Project = () => {
                                 <div className="relative w-full max-w-2xl bg-gradient-to-r from-green-900 to-emerald-900 rounded-2xl overflow-hidden shadow-2xl border-4 border-green-300">
                                      <div className="aspect-video">
                                         <iframe
-                                            src="src/assets/vi.mp4"
+                                            src={cleanlinessVideo}
                                             title="Menstrual Health Awareness Video"
                                             className="w-full h-full"
                                             frameBorder="0"
@@ -172,7 +182,7 @@ const Project = () => {
                             <div className="relative group">
                                 <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-emerald-400 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
                                 <img 
-                                    src="src/assets/clean1.jpeg" 
+                                    src={clean1}
                                     alt="Cleanliness Drive 1" 
                                     className="relative w-64 h-48 object-cover rounded-2xl shadow-xl border-4 border-green-300 hover:border-green-400 transition-all duration-300 transform hover:scale-105"
                                 />
@@ -180,7 +190,7 @@ const Project = () => {
                             <div className="relative group">
                                 <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-emerald-400 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
                                 <img 
-                                    src="src/assets/clean2.jpeg" 
+                                    src={clean2}
                                     alt="Cleanliness Drive 2" 
                                     className="relative w-64 h-48 object-cover rounded-2xl shadow-xl border-4 border-green-300 hover:border-green-400 transition-all duration-300 transform hover:scale-105"
                                 />
@@ -213,7 +223,7 @@ const Project = () => {
                                 <div className="relative w-full max-w-lg bg-gradient-to-r from-pink-900 to-rose-900 rounded-2xl overflow-hidden shadow-2xl border-4 border-pink-300">
                                     <div className="aspect-video">
                                         <iframe
-                                            src="src/assets/mesntrual.mp4"
+                                            src={menstrualVideo}
                                             title="Menstrual Health Awareness Video"
                                             className="w-full h-full"
                                             frameBorder="0"
