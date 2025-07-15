@@ -90,7 +90,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="p-2">
-              <Link to="/projects" onClick={toggleMenu}>
+              <Link to="/project" onClick={toggleMenu}>
                 Projects
               </Link>
             </li>

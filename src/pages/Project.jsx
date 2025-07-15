@@ -4,9 +4,8 @@ import kitabi1 from '../assets/kitabiudan1.jpeg';
 import kitabi2 from '../assets/kitabi2.jpeg';
 import kitabi3 from '../assets/kitabi3.jpeg';
 import clean1 from '../assets/clean1.jpeg';
-import clean2 from '../assets/clean2.jpeg';
+import clean2 from '../assets/clean2.jpeg'; 
 
-// Import videos
 import laborVideo from '../assets/labor.mp4';
 import cleanlinessVideo from '../assets/vi.mp4';
 import menstrualVideo from '../assets/mesntrual.mp4';
