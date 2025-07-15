@@ -36,10 +36,9 @@ const Project = () => {
                 </div>
             </div>
 
-           
             <div className="max-w-7xl mx-auto px-4 pb-20 space-y-20">
                 
-               
+                {/* Kitabi Udan */}
                 <div className="group bg-gradient-to-br from-white to-yellow-50 rounded-3xl shadow-2xl overflow-hidden border-2 border-yellow-200 hover:border-yellow-400 hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
                     <div className="p-8 md:p-12 relative">
                         <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-yellow-200 to-amber-200 rounded-full opacity-20 transform translate-x-16 -translate-y-16"></div>
@@ -96,7 +95,7 @@ const Project = () => {
                     </div>
                 </div>
 
-                
+                {/* Labour's Day */}
                 <div className="group bg-gradient-to-br from-white to-amber-50 rounded-3xl shadow-2xl overflow-hidden border-2 border-amber-200 hover:border-amber-400 hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
                     <div className="p-8 md:p-12 relative">
                         <div className="absolute top-0 left-0 w-40 h-40 bg-gradient-to-br from-amber-200 to-orange-200 rounded-full opacity-20 transform -translate-x-20 -translate-y-20"></div>
@@ -117,26 +116,24 @@ const Project = () => {
                         </div>
                         
                         <div className="flex justify-center">
-                           
-                                <div className="relative w-full max-w-2xl bg-gradient-to-r from-amber-900 to-orange-900 rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-300">
-                                    <div className="aspect-video">
-                                        <iframe
-                                            src={laborVideo}
-                                            title="Labour's Day Video"
-                                            className="w-full h-full"
-                                            frameBorder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowFullScreen
-                                            muted
-                                        ></iframe>
-                                    </div>
+                            <div className="relative w-full max-w-2xl bg-gradient-to-r from-amber-900 to-orange-900 rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-300">
+                                <div className="aspect-video">
+                                    <video
+                                        src={laborVideo}
+                                        className="w-full h-full object-cover"
+                                        controls
+                                        autoPlay
+                                        loop
+                                        muted
+                                        playsInline
+                                    />
                                 </div>
-                            
+                            </div>
                         </div>
                     </div>
                 </div>
 
-               
+                {/* Cleanliness Drive */}
                 <div className="group bg-gradient-to-br from-white to-green-50 rounded-3xl shadow-2xl overflow-hidden border-2 border-green-200 hover:border-green-400 hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
                     <div className="p-8 md:p-12 relative">
                         <div className="absolute bottom-0 right-0 w-36 h-36 bg-gradient-to-br from-green-200 to-emerald-200 rounded-full opacity-20 transform translate-x-18 translate-y-18"></div>
@@ -161,20 +158,18 @@ const Project = () => {
                         </div>
                         
                         <div className="flex justify-center mb-8">
-                           
-                               
-                                <div className="relative w-full max-w-2xl bg-gradient-to-r from-green-900 to-emerald-900 rounded-2xl overflow-hidden shadow-2xl border-4 border-green-300">
-                                     <div className="aspect-video">
-                                        <iframe
-                                            src={cleanlinessVideo}
-                                            title="Menstrual Health Awareness Video"
-                                            className="w-full h-full"
-                                            frameBorder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowFullScreen
-                                        ></iframe>
-                                     </div>
-                            
+                            <div className="relative w-full max-w-2xl bg-gradient-to-r from-green-900 to-emerald-900 rounded-2xl overflow-hidden shadow-2xl border-4 border-green-300">
+                                <div className="aspect-video">
+                                    <video
+                                        src={cleanlinessVideo}
+                                        className="w-full h-full object-cover"
+                                        controls
+                                        autoPlay
+                                        loop
+                                        muted
+                                        playsInline
+                                    />
+                                </div>
                             </div>
                         </div>
                         
@@ -199,9 +194,9 @@ const Project = () => {
                     </div>
                 </div>
 
-               
+                {/* Menstrual Health Awareness */}
                 <div className="group bg-gradient-to-br from-white to-pink-50 rounded-3xl shadow-2xl overflow-hidden border-2 border-pink-200 hover:border-pink-400 hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
-                    <div className="p-8 md:p-12 ">
+                    <div className="p-8 md:p-12 relative">
                         <div className="absolute top-0 left-0 w-44 h-44 bg-gradient-to-br from-pink-200 to-rose-200 rounded-full opacity-20 transform -translate-x-22 -translate-y-22"></div>
                         
                         <div className="text-center mb-10 relative z-10">
@@ -220,22 +215,19 @@ const Project = () => {
                         </div>
                         
                         <div className="flex justify-center">
-                                <div className="relative w-full max-w-lg bg-gradient-to-r from-pink-900 to-rose-900 rounded-2xl overflow-hidden shadow-2xl border-4 border-pink-300">
-                                    <div className="aspect-video">
-                                        <iframe
-                                            src={menstrualVideo}
-                                            title="Menstrual Health Awareness Video"
-                                            className="w-full h-full"
-                                            frameBorder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowFullScreen
-                                        ></iframe>
-                                     </div>
+                            <div className="relative w-full max-w-lg bg-gradient-to-r from-pink-900 to-rose-900 rounded-2xl overflow-hidden shadow-2xl border-4 border-pink-300">
+                                <div className="aspect-video">
+                                    <video
+                                        src={menstrualVideo}
+                                        className="w-full h-full object-cover"
+                                        controls
+                                        autoPlay
+                                        loop
+                                        muted
+                                        playsInline
+                                    />
                                 </div>
-
-                                
-
-                            
+                            </div>
                         </div>
                     </div>
                 </div>

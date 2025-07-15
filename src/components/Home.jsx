@@ -46,7 +46,7 @@ const Home = () => {
             </h1>
 
             <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0">
-              Ek-Pryass empowers communities through innovative social and health awareness campaigns, creating lasting impact one person at a time.
+              Ek-Prayass empowers communities through innovative social and health awareness campaigns, creating lasting impact one person at a time.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 pt-3 items-center justify-center lg:justify-start">
