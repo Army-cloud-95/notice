@@ -18,16 +18,24 @@ const Notice = () => {
     fetchNotices();
   }, []);
 
-  const fetchNotices = async () => {
-    try {
-      const res = await fetch('https://notice-jd1f.onrender.com/api/notices');
-      const data = await res.json();
+ const fetchNotices = async () => {
+  try {
+    const res = await fetch('https://notice-jd1f.onrender.com/api/notices');
+    const data = await res.json();
+    console.log("Fetched notices:", data);
+
+    if (Array.isArray(data)) {
       setNotices(data);
-    } catch (err) {
-      console.error('Error fetching notices:', err);
-      
+    } else {
+      console.error("Expected array but got:", data);
+      setNotices([]);
     }
-  };
+  } catch (err) {
+    console.error('Error fetching notices:', err);
+    setNotices([]); // fallback in case of error
+  }
+};
+
 
   // Login modal input change
   const handleLoginChange = (e) => {
