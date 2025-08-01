@@ -20,7 +20,7 @@ const Notice = () => {
 
   const fetchNotices = async () => {
     try {
-      const res = await fetch('http://localhost:8000/api/notices');
+      const res = await fetch('https://notice-jd1f.onrender.com/api/notices');
       const data = await res.json();
       setNotices(data);
     } catch (err) {
@@ -38,7 +38,7 @@ const Notice = () => {
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:8000/api/notices/admin/login', {
+      const res = await fetch('https://notice-jd1f.onrender.com/api/notices/admin/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(loginForm),
@@ -83,7 +83,7 @@ const Notice = () => {
   // Actual post request after login check
   const handleSubmitActual = async () => {
     try {
-      const res = await fetch('http://localhost:8000/api/notices', {
+      const res = await fetch('https://notice-jd1f.onrender.com/api/notices', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -115,7 +115,7 @@ const Notice = () => {
   // Actual delete request after login check
   const handleDeleteActual = async (id) => {
     try {
-      const res = await fetch(`http://localhost:8000/api/notices/${id}`, {
+      const res = await fetch(`https://notice-jd1f.onrender.com/api/notices/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${adminToken}`,

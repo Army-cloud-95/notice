@@ -10,7 +10,17 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 8000;
 
-app.use(cors());
+const allowedOrigins = [
+  'http://localhost:5173', // for local frontend dev
+  'https://notice-theta.vercel.app'
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true, 
+}));
+
+
 app.use(express.json());
 
 
